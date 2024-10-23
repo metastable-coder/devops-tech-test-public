@@ -20,6 +20,11 @@ jobs:
       run:
         working-directory: app/spring-petclinic
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
     strategy:
       matrix:
         java: [ '17' ]
