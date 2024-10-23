@@ -30,4 +30,10 @@ jobs:
           cache: maven
       - name: Build with Gradle Wrapper
         run: ./gradlew build
+      - name: Build petclinic docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./app/spring-petclinic
+          push: true
+
 
