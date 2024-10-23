@@ -35,5 +35,6 @@ jobs:
         with:
           context: ./app/spring-petclinic
           push: true
+          tags: spring-petclinic-test-v1.0
 
 
